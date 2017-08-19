@@ -87,5 +87,77 @@ state of the **resource** on the target system.
 We can express our blog server configuration in the Puppet language as a
 series of **resource declarations**:
 
+```puppet
+package { "apache2":
+  ensure => "2.4.18",
+}
+
+file { "/etc/apache2/http.conf":
+  ensure => "file",
+  source => "puppet:///modules/company_blog/apache2/http.conf",
+  owner => "apache",
+  group => "apache",
+  mode => "0400",
+}
+
+service { "httpd":
+  ensure => "running",
+  enable => "true",
+}
+
+user { "admin":
+  ensure => "present",
+  password => "abc123",
+  home => "/home/admin",
+  groups => "admin",
+}
+```
+
+### Relations
+
+...
+
+### Manifests
+
+...
+
+### Catalogs
+
+...
+
+### Puppet master server and agent nodes
+
+...
+
+### Single server operation
+
+...
+
+## Reuse
+
+...
+
+### Classes
+
+...
+
+### Custom resource types
+
+...
+
+### Modules
+
+...
+
+### Puppet Forge
+
+...
+
+## Best practices
+
+...
+
+### Hiera
+
 ...
 
