@@ -8,10 +8,10 @@ What is configuration management?
 
 ### Manual configuration
 
-Imagine you are setting up a web server to host a company blog. IT
-provides you with a virtual machine, and a username and password to log
-into that virtual machine. You log into the virtual machine, and see
-what is installed on it.
+Imagine you are setting up a web server to host a company blog. The IT
+department provides you with a virtual machine, and a username and
+password to log into that virtual machine. You log into the virtual
+machine, and see what is installed on it.
 
 Well, first you need to install Apache HTTP Server. You go to the Apache
 website and follow their instructions to install Apache HTTP Server 2.4.
