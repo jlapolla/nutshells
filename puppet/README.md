@@ -20,9 +20,9 @@ serve your company blog. Finally, you start the `httpd` service, and
 configure it to listen on port `0.0.0.0:80` for the HTTP protocol, and
 listen on `0.0.0.0:443` for the HTTPS protocol.
 
-Since you're thinking ahead about future changes you may need to make on
-the server, you create a new `admin` user with password `abc123`, so you
-can log in as `admin` and manage the server.
+Since you're thinking ahead about future changes you will need to make
+on the server, you create a new `admin` user with password `abc123` so
+you can log in as `admin` and manage the server.
 
 ### Expressing a configuration
 
