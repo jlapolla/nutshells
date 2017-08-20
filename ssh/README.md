@@ -1,7 +1,8 @@
 # SSH in a nutshell
 
 SSH is not just a single program. The SSH ecosystem consists of a family
-of related programs.
+of related programs that establish secure encrypted connections between
+machines.
 
 ## Use cases
 
@@ -65,7 +66,7 @@ The following steps happen in order:
 
 During this exchange, Alice's terminal may look like:
 
-```bash
+```
 alice@client_machine ~ $ ssh alice@server_machine
 alice@server_machine's password:
 alice@server_machine ~ $ cd bin
@@ -90,6 +91,46 @@ Let's break this down line by line.
 - Line 7: Output from `exit` run on `server_machine`.
 - Line 8: Output from `ssh` run on `client_machine`.
 - Line 9: Alice's terminal prompt on `client_machine`.
+
+## Authentication
+
+...
+
+### Password authentication
+
+...
+
+### Public key authentication
+
+...
+
+### Host based authentication
+
+...
+
+## Identity management
+
+...
+
+### Identities and users
+
+...
+
+### Identities and machines
+
+...
+
+### Creating identities
+
+...
+
+### SSH agent
+
+...
+
+## Best practices
+
+...
 
 # UNORGANIZED
 
