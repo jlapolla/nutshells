@@ -192,3 +192,27 @@ So, your preconditions are incomplete. Accept it. And don't bother to
 document obvious preconditions (e.g. that numbers are within array
 bounds, et cetera).
 
+## Conclusion
+
+Start by assuming everything will be okay. Assume the caller will call
+your function with inputs that make sense. Assume that the system is not
+about to run out of memory. Assume that integers will not overflow.
+
+Next, through testing and actual use, identify recurring problems that
+violate your assumptions. There are two categories of conditions that
+will violate your assumptions:
+
+- Bugs in the calling code. Fix these in the calling code. Do not modify
+  your function to handle the unexpected condition in a well-defined
+  way.
+- Legitimate conditions that may arise and should be handled. For
+  example, if a user provides the wrong password when they try to log
+  in, that should not be an unexpected condition. Your code should
+  consider that as a possibility, and include a feature that handles
+  that case.
+
+As a final note, always handle exceptions as far up the call chain as
+possible. A low-level function **MUST** allow exceptions to propagate to
+the caller. I could talk more about this, but I think it's a subject for
+a future nutshell.
+
